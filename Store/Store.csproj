@@ -110,6 +110,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Store.Data.Album.datasource" />
     <None Include="Properties\DataSources\Store.Data.Game.datasource" />
     <None Include="Properties\DataSources\Store.Data.Movie.datasource" />
     <None Include="Properties\Settings.settings">
