@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\DataContextcs.cs" />
     <Compile Include="Data\Album.cs" />
     <Compile Include="Data\Game.cs" />
     <Compile Include="Data\Movie.cs" />
@@ -92,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialized\AlbumXmlSerialized.cs" />
+    <Compile Include="Serialized\GameXmlSerialized.cs" />
+    <Compile Include="Serialized\MovieXmlSerialized.cs" />
     <EmbeddedResource Include="Forms\AlbumForm.resx">
       <DependentUpon>AlbumForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,8 +130,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Serialized\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
