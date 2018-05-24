@@ -18,7 +18,7 @@ namespace Store.Data
         string description = "";
 
         [XmlElement("Movie-name")]
-        public string GameName
+        public string MovieName
         {
             get { return movieName; }
             set { movieName = value; }
@@ -42,7 +42,7 @@ namespace Store.Data
             set { date = value; }
         }
         [XmlElement("Author")]
-        public string Publisher
+        public string Author
         {
             get { return author; }
             set { author = value; }
