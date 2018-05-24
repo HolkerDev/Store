@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Game.cs" />
+    <Compile Include="Data\Movie.cs" />
     <Compile Include="Forms\AlbumForm.cs">
       <SubType>Form</SubType>
     </Compile>
