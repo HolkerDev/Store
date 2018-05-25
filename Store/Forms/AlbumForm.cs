@@ -30,5 +30,10 @@ namespace Store.Forms
         private void button2_Click(object sender, EventArgs e)
         {
         }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

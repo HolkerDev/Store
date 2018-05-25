@@ -49,6 +49,15 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.addMovieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addAlbumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movieListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gameListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.albumListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +73,7 @@
             this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(767, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(962, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,28 +94,28 @@
             this.gameToolStripMenuItem,
             this.albumToolStripMenuItem});
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
             this.closeToolStripMenuItem.Text = "Impoort";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // movieToolStripMenuItem
             // 
             this.movieToolStripMenuItem.Name = "movieToolStripMenuItem";
-            this.movieToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.movieToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.movieToolStripMenuItem.Text = "Movie";
             this.movieToolStripMenuItem.Click += new System.EventHandler(this.movieToolStripMenuItem_Click);
             // 
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.gameToolStripMenuItem.Text = "Game";
             this.gameToolStripMenuItem.Click += new System.EventHandler(this.gameToolStripMenuItem_Click);
             // 
             // albumToolStripMenuItem
             // 
             this.albumToolStripMenuItem.Name = "albumToolStripMenuItem";
-            this.albumToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.albumToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.albumToolStripMenuItem.Text = "Album";
             this.albumToolStripMenuItem.Click += new System.EventHandler(this.albumToolStripMenuItem_Click);
             // 
@@ -117,7 +126,7 @@
             this.gameToolStripMenuItem1,
             this.albumToolStripMenuItem1});
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
             this.exportToolStripMenuItem.Text = "Export";
             // 
             // movieToolStripMenuItem1
@@ -141,18 +150,26 @@
             // closeToolStripMenuItem1
             // 
             this.closeToolStripMenuItem1.Name = "closeToolStripMenuItem1";
-            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(138, 26);
             this.closeToolStripMenuItem1.Text = "Close";
             this.closeToolStripMenuItem1.Click += new System.EventHandler(this.closeToolStripMenuItem1_Click);
             // 
             // operationsToolStripMenuItem
             // 
+            this.operationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addMovieToolStripMenuItem,
+            this.addGameToolStripMenuItem,
+            this.addAlbumToolStripMenuItem});
             this.operationsToolStripMenuItem.Name = "operationsToolStripMenuItem";
             this.operationsToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.operationsToolStripMenuItem.Text = "Operations";
             // 
             // dataToolStripMenuItem
             // 
+            this.dataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.movieListToolStripMenuItem,
+            this.gameListToolStripMenuItem,
+            this.albumListToolStripMenuItem});
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
             this.dataToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.dataToolStripMenuItem.Text = "Data";
@@ -165,6 +182,10 @@
             // 
             // viewToolStripMenuItem
             // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.horizontalToolStripMenuItem,
+            this.verticalToolStripMenuItem,
+            this.cascadeToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.viewToolStripMenuItem.Text = "View";
@@ -178,7 +199,7 @@
             this.toolStripButton3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(767, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(962, 27);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -212,17 +233,74 @@
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 484);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 614);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(767, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(962, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // addMovieToolStripMenuItem
+            // 
+            this.addMovieToolStripMenuItem.Name = "addMovieToolStripMenuItem";
+            this.addMovieToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.addMovieToolStripMenuItem.Text = "Add movie";
+            // 
+            // addGameToolStripMenuItem
+            // 
+            this.addGameToolStripMenuItem.Name = "addGameToolStripMenuItem";
+            this.addGameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.addGameToolStripMenuItem.Text = "Add game";
+            // 
+            // addAlbumToolStripMenuItem
+            // 
+            this.addAlbumToolStripMenuItem.Name = "addAlbumToolStripMenuItem";
+            this.addAlbumToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.addAlbumToolStripMenuItem.Text = "Add album";
+            // 
+            // movieListToolStripMenuItem
+            // 
+            this.movieListToolStripMenuItem.Name = "movieListToolStripMenuItem";
+            this.movieListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.movieListToolStripMenuItem.Text = "Movie List";
+            // 
+            // gameListToolStripMenuItem
+            // 
+            this.gameListToolStripMenuItem.Name = "gameListToolStripMenuItem";
+            this.gameListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.gameListToolStripMenuItem.Text = "Game List";
+            // 
+            // albumListToolStripMenuItem
+            // 
+            this.albumListToolStripMenuItem.Name = "albumListToolStripMenuItem";
+            this.albumListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.albumListToolStripMenuItem.Text = "Album List";
+            // 
+            // horizontalToolStripMenuItem
+            // 
+            this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
+            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.horizontalToolStripMenuItem.Text = "Horizontal";
+            this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
+            // 
+            // verticalToolStripMenuItem
+            // 
+            this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
+            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.verticalToolStripMenuItem.Text = "Vertical";
+            this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
+            // 
+            // cascadeToolStripMenuItem
+            // 
+            this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
+            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.cascadeToolStripMenuItem.Text = "Cascade";
+            this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.cascadeToolStripMenuItem_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 506);
+            this.ClientSize = new System.Drawing.Size(962, 636);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -261,5 +339,14 @@
         private System.Windows.Forms.ToolStripMenuItem gameToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem albumToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem addMovieToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addAlbumToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem movieListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gameListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem albumListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem horizontalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verticalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cascadeToolStripMenuItem;
     }
 }

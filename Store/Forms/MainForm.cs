@@ -110,16 +110,31 @@ namespace Store.Forms
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    Album data = MovieXmlSerialized.Deserialize(openFileDialog.FileName);
-                    MovieForm movieForm = new MovieForm(data);
-                    movieForm.MdiParent = this;
-                    movieForm.Show();
+                    Album data = AlbumXmlSerialized.Deserialize(openFileDialog.FileName);
+                    AlbumForm albumForm = new AlbumForm(data);
+                    albumForm.MdiParent = this;
+                    albumForm.Show();
                 }
             }
             catch (Exception x)
             {
                 MessageBox.Show("Error : " + x.Message);
             }
+        }
+
+        private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.Cascade);
         }
     }
 }
