@@ -41,23 +41,23 @@
             this.albumToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.operationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addMovieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addAlbumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movieListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gameListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.albumListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.addMovieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addAlbumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.movieListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gameListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.albumListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -164,6 +164,24 @@
             this.operationsToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.operationsToolStripMenuItem.Text = "Operations";
             // 
+            // addMovieToolStripMenuItem
+            // 
+            this.addMovieToolStripMenuItem.Name = "addMovieToolStripMenuItem";
+            this.addMovieToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.addMovieToolStripMenuItem.Text = "Add movie";
+            // 
+            // addGameToolStripMenuItem
+            // 
+            this.addGameToolStripMenuItem.Name = "addGameToolStripMenuItem";
+            this.addGameToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.addGameToolStripMenuItem.Text = "Add game";
+            // 
+            // addAlbumToolStripMenuItem
+            // 
+            this.addAlbumToolStripMenuItem.Name = "addAlbumToolStripMenuItem";
+            this.addAlbumToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.addAlbumToolStripMenuItem.Text = "Add album";
+            // 
             // dataToolStripMenuItem
             // 
             this.dataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -173,6 +191,27 @@
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
             this.dataToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.dataToolStripMenuItem.Text = "Data";
+            // 
+            // movieListToolStripMenuItem
+            // 
+            this.movieListToolStripMenuItem.Name = "movieListToolStripMenuItem";
+            this.movieListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.movieListToolStripMenuItem.Text = "Movie List";
+            this.movieListToolStripMenuItem.Click += new System.EventHandler(this.movieListToolStripMenuItem_Click);
+            // 
+            // gameListToolStripMenuItem
+            // 
+            this.gameListToolStripMenuItem.Name = "gameListToolStripMenuItem";
+            this.gameListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.gameListToolStripMenuItem.Text = "Game List";
+            this.gameListToolStripMenuItem.Click += new System.EventHandler(this.gameListToolStripMenuItem_Click);
+            // 
+            // albumListToolStripMenuItem
+            // 
+            this.albumListToolStripMenuItem.Name = "albumListToolStripMenuItem";
+            this.albumListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.albumListToolStripMenuItem.Text = "Album List";
+            this.albumListToolStripMenuItem.Click += new System.EventHandler(this.albumListToolStripMenuItem_Click);
             // 
             // formsToolStripMenuItem
             // 
@@ -189,6 +228,27 @@
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.viewToolStripMenuItem.Text = "View";
+            // 
+            // horizontalToolStripMenuItem
+            // 
+            this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
+            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.horizontalToolStripMenuItem.Text = "Horizontal";
+            this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
+            // 
+            // verticalToolStripMenuItem
+            // 
+            this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
+            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.verticalToolStripMenuItem.Text = "Vertical";
+            this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
+            // 
+            // cascadeToolStripMenuItem
+            // 
+            this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
+            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.cascadeToolStripMenuItem.Text = "Cascade";
+            this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.cascadeToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -238,64 +298,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(962, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // addMovieToolStripMenuItem
-            // 
-            this.addMovieToolStripMenuItem.Name = "addMovieToolStripMenuItem";
-            this.addMovieToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.addMovieToolStripMenuItem.Text = "Add movie";
-            // 
-            // addGameToolStripMenuItem
-            // 
-            this.addGameToolStripMenuItem.Name = "addGameToolStripMenuItem";
-            this.addGameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.addGameToolStripMenuItem.Text = "Add game";
-            // 
-            // addAlbumToolStripMenuItem
-            // 
-            this.addAlbumToolStripMenuItem.Name = "addAlbumToolStripMenuItem";
-            this.addAlbumToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.addAlbumToolStripMenuItem.Text = "Add album";
-            // 
-            // movieListToolStripMenuItem
-            // 
-            this.movieListToolStripMenuItem.Name = "movieListToolStripMenuItem";
-            this.movieListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.movieListToolStripMenuItem.Text = "Movie List";
-            this.movieListToolStripMenuItem.Click += new System.EventHandler(this.movieListToolStripMenuItem_Click);
-            // 
-            // gameListToolStripMenuItem
-            // 
-            this.gameListToolStripMenuItem.Name = "gameListToolStripMenuItem";
-            this.gameListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.gameListToolStripMenuItem.Text = "Game List";
-            // 
-            // albumListToolStripMenuItem
-            // 
-            this.albumListToolStripMenuItem.Name = "albumListToolStripMenuItem";
-            this.albumListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.albumListToolStripMenuItem.Text = "Album List";
-            // 
-            // horizontalToolStripMenuItem
-            // 
-            this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
-            this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.horizontalToolStripMenuItem.Text = "Horizontal";
-            this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
-            // 
-            // verticalToolStripMenuItem
-            // 
-            this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.verticalToolStripMenuItem.Text = "Vertical";
-            this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
-            // 
-            // cascadeToolStripMenuItem
-            // 
-            this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
-            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.cascadeToolStripMenuItem.Text = "Cascade";
-            this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.cascadeToolStripMenuItem_Click);
             // 
             // MainForm
             // 

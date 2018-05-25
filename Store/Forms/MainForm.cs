@@ -143,5 +143,19 @@ namespace Store.Forms
             listMovie.MdiParent = this;
             listMovie.Show();
         }
+
+        private void gameListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListGame listGame = new ListGame();
+            listGame.MdiParent = this;
+            listGame.Show();
+        }
+
+        private void albumListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListAlbum listAlbum = new ListAlbum();
+            listAlbum.MdiParent = this;
+            listAlbum.Show();
+        }
     }
 }

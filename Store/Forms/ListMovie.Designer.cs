@@ -47,6 +47,9 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -66,6 +69,7 @@
             // 
             // Add
             // 
+            this.Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Add.Location = new System.Drawing.Point(12, 396);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(81, 68);
@@ -76,6 +80,7 @@
             // 
             // Close
             // 
+            this.Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Close.Location = new System.Drawing.Point(790, 396);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(102, 68);
@@ -86,6 +91,7 @@
             // 
             // Edit
             // 
+            this.Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Edit.Location = new System.Drawing.Point(99, 396);
             this.Edit.Name = "Edit";
             this.Edit.Size = new System.Drawing.Size(75, 68);
@@ -96,6 +102,7 @@
             // 
             // Update
             // 
+            this.Update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Update.Location = new System.Drawing.Point(180, 396);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(82, 68);

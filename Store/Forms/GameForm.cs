@@ -6,6 +6,7 @@ using System.Drawing;
 using Store.Data;
 using Store.Serialized;
 using System.Linq;
+using Store.DataAccess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,6 +46,21 @@ namespace Store.Forms
         private void Close_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Save_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DataContext.AddOrEditGame(data) == true)
+                {
+                    this.Close();
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show("Error : " + x.Message);
+            }
         }
     }
 }
