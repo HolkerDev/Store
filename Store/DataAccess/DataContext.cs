@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Store.DataAccess
 {
-    class DataContextcs
+    class DataContext
     {
         static List<Movie> movies = new List<Movie>();
         static List<Game> games = new List<Game>();

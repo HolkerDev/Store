@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Store.Data
 {
-    class Album
+    public class Album
     {
         string albumName = "";
         float price = 0.0f;

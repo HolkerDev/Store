@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\DataContextcs.cs" />
+    <Compile Include="DataAccess\DataContext.cs" />
     <Compile Include="Data\Album.cs" />
     <Compile Include="Data\Game.cs" />
     <Compile Include="Data\Movie.cs" />
@@ -101,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MovieForm.resx">
       <DependentUpon>MovieForm.cs</DependentUpon>

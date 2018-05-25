@@ -17,7 +17,7 @@ namespace Store
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AlbumForm());
+            Application.Run(new MainForm());
         }
     }
 }

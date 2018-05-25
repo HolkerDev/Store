@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace Store.Data
 {
-    class Game
+    public class Game
     {
         string gameName = "";
         float price = 0.0f;
