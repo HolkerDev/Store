@@ -136,5 +136,12 @@ namespace Store.Forms
         {
             LayoutMdi(MdiLayout.Cascade);
         }
+
+        private void movieListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListMovie listMovie = new ListMovie();
+            listMovie.MdiParent = this;
+            listMovie.Show();
+        }
     }
 }

@@ -253,6 +253,7 @@
             this.Save.TabIndex = 2;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // Export
             // 

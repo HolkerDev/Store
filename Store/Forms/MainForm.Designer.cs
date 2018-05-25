@@ -262,6 +262,7 @@
             this.movieListToolStripMenuItem.Name = "movieListToolStripMenuItem";
             this.movieListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.movieListToolStripMenuItem.Text = "Movie List";
+            this.movieListToolStripMenuItem.Click += new System.EventHandler(this.movieListToolStripMenuItem_Click);
             // 
             // gameListToolStripMenuItem
             // 

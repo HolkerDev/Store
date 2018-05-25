@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using Store.DataAccess;
 using System.Text;
 using Store.Data;
 using Store.Serialized;
@@ -35,6 +36,21 @@ namespace Store.Forms
         private void Export_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Save_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DataContext.AddOrEditMovie(data) == true)
+                {
+                    this.Close();
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show("Error : " + x.Message);
+            }
         }
     }
 }
