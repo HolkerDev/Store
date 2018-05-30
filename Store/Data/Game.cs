@@ -6,11 +6,15 @@ using System.Xml;
 using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Store.Data
 {
+    [Table("Games")]
     public class Game
     {
+        int gameId = 0;
         string gameName = "";
         float price = 0.0f;
         string genre = "";
@@ -61,11 +65,11 @@ namespace Store.Data
             get { return description; }
             set { description = value; }
         }
-
+        [Key]
         public int GameId
         {
-            get;
-            set;
+            get { return gameId; }
+            set { gameId = value; }
         }
 
     }

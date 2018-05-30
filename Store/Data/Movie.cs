@@ -4,11 +4,15 @@ using System.Linq;
 using System.Xml.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Store.Data
 {
+    [Table("Movies")]
     public class Movie
     {
+        int movieId = 0;
         string movieName = "";
         float price = 0.0f;
         string genre = "";
@@ -16,6 +20,13 @@ namespace Store.Data
         string author = "";
         float grade = 0.0f;
         string description = "";
+
+        [Key]
+        public int MovieId
+        {
+            get { return movieId; }
+            set { movieId = value; }
+        }
 
         [XmlElement("Movie-name")]
         public string MovieName
@@ -58,12 +69,6 @@ namespace Store.Data
         {
             get { return description; }
             set { description = value; }
-        }
-
-        public int MovieId
-        {
-            get;
-            set;
         }
     }
 }

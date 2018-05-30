@@ -9,31 +9,36 @@ namespace Store.DataAccess
 {
     class DataContext
     {
-        static List<Movie> movies = new List<Movie>();
-        static List<Game> games = new List<Game>();
-        static List<Album> albums = new List<Album>();
+        //static List<Movie> movies = new List<Movie>();
+        //static List<Game> games = new List<Game>();
+        //static List<Album> albums = new List<Album>();
+        static StoreContext context = new StoreContext();
+        public static StoreContext Context
+        {
+            get { return context; }
+        }
         public static List<Movie> GetMovieList()
         {
-            return movies;
+            return context.Movies.ToList();
         }
         public static List<Game> GetGameList()
         {
-            return games;
+            return context.Games.ToList();
         }
         public static List<Album> GetAlbumList()
         {
-            return albums;
+            return context.Albums.ToList();
         }
         public static bool AddOrEditMovie(Movie value)
         {
             if (value.MovieId == 0)
             {
-                value.MovieId = movies.Count > 0 ? movies.Max(x => x.MovieId) + 1 : 1;
-                movies.Add(value);
+                value.MovieId = context.Movies.Count() > 0 ? context.Movies.Max(x => x.MovieId) + 1 : 1;
+                context.Movies.Add(value);
             }
             else
             {
-                Movie movie = movies.FirstOrDefault(x => x.MovieId == value.MovieId);
+                Movie movie = context.Movies.FirstOrDefault(x => x.MovieId == value.MovieId);
                 if (movie != null)
                 {
                     movie.MovieName = value.MovieName;
@@ -45,18 +50,19 @@ namespace Store.DataAccess
                     movie.Description = value.Description;
                 }
             }
+            context.SaveChanges();
             return true;
         }
         public static bool AddOrEditGame(Game value)
         {
             if (value.GameId == 0)
             {
-                value.GameId = games.Count > 0 ? games.Max(x => x.GameId) + 1 : 1;
-                games.Add(value);
+                value.GameId = context.Games.Count() > 0 ? context.Games.Max(x => x.GameId) + 1 : 1;
+                context.Games.Add(value);
             }
             else
             {
-                Game game = games.FirstOrDefault(x => x.GameId == value.GameId);
+                Game game = context.Games.FirstOrDefault(x => x.GameId == value.GameId);
                 if (game != null)
                 {
                     game.GameName = value.GameName;
@@ -68,18 +74,19 @@ namespace Store.DataAccess
                     game.Description = value.Description;
                 }
             }
+            context.SaveChanges();
             return true;
         }
         public static bool AddOrEditAlbum(Album value)
         {
             if (value.AlbumId == 0)
             {
-                value.AlbumId = albums.Count > 0 ? albums.Max(x => x.AlbumId) + 1 : 1;
-                albums.Add(value);
+                value.AlbumId = context.Albums.Count() > 0 ? context.Albums.Max(x => x.AlbumId) + 1 : 1;
+                context.Albums.Add(value);
             }
             else
             {
-                Album album = albums.FirstOrDefault(x => x.AlbumId == value.AlbumId);
+                Album album = context.Albums.FirstOrDefault(x => x.AlbumId == value.AlbumId);
                 if (album != null)
                 {
                     album.AlbumName = value.AlbumName;
@@ -91,6 +98,7 @@ namespace Store.DataAccess
                     album.Description = value.Description;
                 }
             }
+            context.SaveChanges();
             return true;
 
         }
