@@ -63,7 +63,7 @@ namespace Store.Data
         public int MovieId
         {
             get;
-            internal set;
+            set;
         }
     }
 }

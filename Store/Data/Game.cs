@@ -65,7 +65,7 @@ namespace Store.Data
         public int GameId
         {
             get;
-            internal set;
+            set;
         }
 
     }
