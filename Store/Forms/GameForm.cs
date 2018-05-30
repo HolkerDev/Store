@@ -62,5 +62,25 @@ namespace Store.Forms
                 MessageBox.Show("Error : " + x.Message);
             }
         }
+
+        private void Export_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Title = "Export game album";
+                saveFileDialog.Filter = "Files Xml (*.xml)|*.xml|All files (*.*)" +
+                    "|*.*";
+                if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    GameXmlSerialized.Serialize(data, saveFileDialog.FileName);
+                }
+
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show("Error : " + x.Message);
+            }
+        }
     }
 }

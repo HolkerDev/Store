@@ -63,7 +63,7 @@ namespace Store.Data
         public int AlbumId
         {
             get;
-            internal set;
+            set;
         }
     }
 }

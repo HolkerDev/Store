@@ -276,6 +276,7 @@
             this.Export.TabIndex = 3;
             this.Export.Text = "Export to XML";
             this.Export.UseVisualStyleBackColor = true;
+            this.Export.Click += new System.EventHandler(this.Export_Click);
             // 
             // GameForm
             // 

@@ -102,6 +102,9 @@
     <EmbeddedResource Include="Forms\GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListAlbum.resx">
+      <DependentUpon>ListAlbum.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ListGame.resx">
       <DependentUpon>ListGame.cs</DependentUpon>
     </EmbeddedResource>
