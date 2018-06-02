@@ -58,6 +58,7 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.addTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -159,7 +160,8 @@
             this.operationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addMovieToolStripMenuItem,
             this.addGameToolStripMenuItem,
-            this.addAlbumToolStripMenuItem});
+            this.addAlbumToolStripMenuItem,
+            this.addTransactionToolStripMenuItem});
             this.operationsToolStripMenuItem.Name = "operationsToolStripMenuItem";
             this.operationsToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.operationsToolStripMenuItem.Text = "Operations";
@@ -167,19 +169,19 @@
             // addMovieToolStripMenuItem
             // 
             this.addMovieToolStripMenuItem.Name = "addMovieToolStripMenuItem";
-            this.addMovieToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.addMovieToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.addMovieToolStripMenuItem.Text = "Add movie";
             // 
             // addGameToolStripMenuItem
             // 
             this.addGameToolStripMenuItem.Name = "addGameToolStripMenuItem";
-            this.addGameToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.addGameToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.addGameToolStripMenuItem.Text = "Add game";
             // 
             // addAlbumToolStripMenuItem
             // 
             this.addAlbumToolStripMenuItem.Name = "addAlbumToolStripMenuItem";
-            this.addAlbumToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.addAlbumToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.addAlbumToolStripMenuItem.Text = "Add album";
             // 
             // dataToolStripMenuItem
@@ -195,21 +197,21 @@
             // movieListToolStripMenuItem
             // 
             this.movieListToolStripMenuItem.Name = "movieListToolStripMenuItem";
-            this.movieListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.movieListToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.movieListToolStripMenuItem.Text = "Movie List";
             this.movieListToolStripMenuItem.Click += new System.EventHandler(this.movieListToolStripMenuItem_Click);
             // 
             // gameListToolStripMenuItem
             // 
             this.gameListToolStripMenuItem.Name = "gameListToolStripMenuItem";
-            this.gameListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.gameListToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.gameListToolStripMenuItem.Text = "Game List";
             this.gameListToolStripMenuItem.Click += new System.EventHandler(this.gameListToolStripMenuItem_Click);
             // 
             // albumListToolStripMenuItem
             // 
             this.albumListToolStripMenuItem.Name = "albumListToolStripMenuItem";
-            this.albumListToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.albumListToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.albumListToolStripMenuItem.Text = "Album List";
             this.albumListToolStripMenuItem.Click += new System.EventHandler(this.albumListToolStripMenuItem_Click);
             // 
@@ -299,6 +301,13 @@
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // addTransactionToolStripMenuItem
+            // 
+            this.addTransactionToolStripMenuItem.Name = "addTransactionToolStripMenuItem";
+            this.addTransactionToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.addTransactionToolStripMenuItem.Text = "Add transaction";
+            this.addTransactionToolStripMenuItem.Click += new System.EventHandler(this.addTransactionToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -351,5 +360,6 @@
         private System.Windows.Forms.ToolStripMenuItem horizontalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verticalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cascadeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addTransactionToolStripMenuItem;
     }
 }

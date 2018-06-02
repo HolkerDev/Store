@@ -157,5 +157,13 @@ namespace Store.Forms
             listAlbum.MdiParent = this;
             listAlbum.Show();
         }
+
+        private void addTransactionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListTransaction transListForm = new ListTransaction();
+            transListForm.MdiParent = this;
+            transListForm.Show();
+
+        }
     }
 }
