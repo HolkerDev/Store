@@ -172,6 +172,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ReferenceEdit\ReferenceEdit.csproj">
+      <Project>{12C0614E-C5CB-4DE0-BD59-ABF21CC771BA}</Project>
+      <Name>ReferenceEdit</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

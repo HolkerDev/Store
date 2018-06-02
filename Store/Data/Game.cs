@@ -14,6 +14,7 @@ namespace Store.Data
     [Table("Games")]
     public class Game
     {
+        //string refNumber = "";
         int gameId = 0;
         string gameName = "";
         float price = 0.0f;
@@ -22,7 +23,8 @@ namespace Store.Data
         string publisher = "";
         float grade = 0.0f;
         string description = "";
-        
+        [XmlElement("referencja-produktu")]
+        public string ReferenceNumber { get; set; }
         [XmlElement("Game-name")]
         public string GameName
         {

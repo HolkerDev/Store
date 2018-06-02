@@ -33,7 +33,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.gameBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -49,12 +48,15 @@
             this.Close = new System.Windows.Forms.Button();
             this.Save = new System.Windows.Forms.Button();
             this.Export = new System.Windows.Forms.Button();
+            this.GameReferenceEdit = new ReferenceEdit.UserControl1();
+            this.label6 = new System.Windows.Forms.Label();
+            this.gameBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -72,6 +74,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.GameReferenceEdit);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.numericUpDown2);
             this.tabPage1.Controls.Add(this.numericUpDown1);
@@ -112,10 +116,6 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(469, 22);
             this.numericUpDown2.TabIndex = 10;
-            // 
-            // gameBindingSource
-            // 
-            this.gameBindingSource.DataSource = typeof(Store.Data.Game);
             // 
             // numericUpDown1
             // 
@@ -278,6 +278,35 @@
             this.Export.UseVisualStyleBackColor = true;
             this.Export.Click += new System.EventHandler(this.Export_Click);
             // 
+            // GameReferenceEdit
+            // 
+            this.GameReferenceEdit.InvalidNumberEvent +=gameReferenceEdit_InvalidNumberEvent;
+            this.GameReferenceEdit.InvalidSerialEvent += gameReferenceEdit_InvalidSerialEvent;
+            this.GameReferenceEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.GameReferenceEdit.Code = "";
+            this.GameReferenceEdit.DataBindings.Add(new System.Windows.Forms.Binding("Reference", this.gameBindingSource, "ReferenceNumber", true));
+            this.GameReferenceEdit.Location = new System.Drawing.Point(125, 225);
+            this.GameReferenceEdit.Name = "GameReferenceEdit";
+            this.GameReferenceEdit.Number = "";
+            this.GameReferenceEdit.Reference = "";
+            this.GameReferenceEdit.Serial = "";
+            this.GameReferenceEdit.Size = new System.Drawing.Size(419, 30);
+            this.GameReferenceEdit.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 238);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Reference";
+            // 
+            // gameBindingSource
+            // 
+            this.gameBindingSource.DataSource = typeof(Store.Data.Game);
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -293,10 +322,10 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -323,5 +352,7 @@
         private System.Windows.Forms.Button Export;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label6;
+        private ReferenceEdit.UserControl1 GameReferenceEdit;
     }
 }

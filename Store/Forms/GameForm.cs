@@ -82,5 +82,13 @@ namespace Store.Forms
                 MessageBox.Show("Error : " + x.Message);
             }
         }
+        void gameReferenceEdit_InvalidNumberEvent(object sender, string text)
+        {
+            MessageBox.Show(String.Format("Wrong reference number: {0}. The number can only contain digits", text));
+        }
+        void gameReferenceEdit_InvalidSerialEvent(object sender, string text)
+        {
+            MessageBox.Show(String.Format("Wrong serial reference: {0}. Serial can contain only letters A-E", text));
+        }
     }
 }
