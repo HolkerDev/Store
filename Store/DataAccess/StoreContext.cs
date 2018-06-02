@@ -17,5 +17,6 @@ namespace Store.DataAccess
         public DbSet<Album> Albums { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Game> Games { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
     }
 }

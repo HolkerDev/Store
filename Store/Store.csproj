@@ -57,6 +57,7 @@
     <Compile Include="Data\Album.cs" />
     <Compile Include="Data\Game.cs" />
     <Compile Include="Data\Movie.cs" />
+    <Compile Include="Data\Transaction.cs" />
     <Compile Include="Forms\AlbumForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +100,7 @@
     <Compile Include="Forms\MovieForm.Designer.cs">
       <DependentUpon>MovieForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Serialized\AlbumXmlSerialized.cs" />

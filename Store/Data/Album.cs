@@ -12,6 +12,7 @@ namespace Store.Data
     [Table("Albums")]
     public class Album
     {
+        bool active = true;
         int albumId = 0;
         string albumName = "";
         float price = 0.0f;

@@ -102,5 +102,31 @@ namespace Store.DataAccess
             return true;
 
         }
+        public static List<Transaction> GetTransactionList()
+        {
+            return context.Transactions.ToList();
+        }
+        public static bool AddOrEditTransaction(Transaction value)
+        {
+            if (value.TransactionId == 0)
+            {
+                value.TransactionId = context.Transactions.Count() > 0 ? context.Transactions.Max(x => x.TransactionId) + 1 : 1;
+                context.Transactions.Add(value);
+            }
+            else
+            {
+                Transaction trans = context.Transactions.FirstOrDefault(x => x.TransactionId == value.TransactionId);
+                if(trans != null)
+                {
+                    trans.Amount = value.Amount;
+                    trans.Price = value.Price;
+                    trans.AlbumData = value.AlbumData;
+                    trans.MovieData = value.MovieData;
+                    trans.GameData = value.GameData;
+                }
+            }
+            context.SaveChanges();
+            return true;
+        }
     }
 }
