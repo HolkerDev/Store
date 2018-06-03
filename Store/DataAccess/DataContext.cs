@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Store.DataAccess
 {
+    /// <summary>
+    /// DataContex
+    /// </summary>
     class DataContext
     {
         //static List<Movie> movies = new List<Movie>();
@@ -17,6 +20,11 @@ namespace Store.DataAccess
         {
             get { return context; }
         }
+        /// <summary>
+        /// GetGameList
+        /// </summary>
+        /// <returns>List</returns>
+        /// <remarks>Metoda zwraca listę produktów zapisanych w bazie danych</remarks>
         public static List<Movie> GetMovieList()
         {
             return context.Movies.ToList();
