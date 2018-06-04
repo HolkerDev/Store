@@ -10,7 +10,7 @@ namespace Store.DataAccess
 {
     public class StoreContext : DbContext
     {
-        public StoreContext() : base("StoreDbContext")
+        public StoreContext() : base("name=StoreDbContext")
         {
 
         }
