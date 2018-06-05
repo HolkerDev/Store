@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Store.Data.Album">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAoAAAAqAIAAIACgAAAAIABAQAAIQEAAAA=</HashCode>
+      <FileName>Data\Album.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Data.Game">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAgAAAAKAMAAAgDAAAAACABAQAgAQEAIAA=</HashCode>
+      <FileName>Data\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Data.Movie">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAEAQAgAAAAoAIBAIACAQAAAAABAQAAAQEAAAA=</HashCode>
+      <FileName>Data\Movie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Data.Transaction">
+    <Position X="5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAEAQAIIAAAACAAAAGAAAEAgAAAAAAgAAAAAAI=</HashCode>
+      <FileName>Data\Transaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.DataAccess.DataContext">
+    <Position X="15.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAgIAEBAAAAAAAAAAAAgAAAAIAAABAAQAAAA=</HashCode>
+      <FileName>DataAccess\DataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.DataAccess.StoreContext">
+    <Position X="12" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>DataAccess\StoreContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.AlbumForm">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAIAAACAAABACAAGABABCJAAAAAACECAQAACRBAA=</HashCode>
+      <FileName>Forms\AlbumForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.GameForm">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCCAAIQAADAAABACIACABBhCBAAAAAADEAAQAACZFAA=</HashCode>
+      <FileName>Forms\GameForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.ListAlbum">
+    <Position X="8.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQYAAgAAACABAAAAAAGAAAACQAgAAAACAACABAiQAQA=</HashCode>
+      <FileName>Forms\ListAlbum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.ListGame">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAgAAACABAAAAAACAAAACAAgAAAgCAACABAmQEQA=</HashCode>
+      <FileName>Forms\ListGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.ListMovie">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQYAAgAAACABAAAACACAAAACAAgggAACAACABAiQAQA=</HashCode>
+      <FileName>Forms\ListMovie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.ListTransaction">
+    <Position X="1.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAZAAAAAACABAAAACACAAAASQAgAAAgCAACABASQAAA=</HashCode>
+      <FileName>Forms\ListTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.MainForm">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jQBmIEIAASAFAAAgokmAAFsORIAChABQgAQEAAgABAE=</HashCode>
+      <FileName>Forms\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.MovieForm">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAIQAACAAABACAACABBBCJAAAgAACEAAQAACRAAA=</HashCode>
+      <FileName>Forms\MovieForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Forms.TransactionForm">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAEBAQAAHAAAASAAAYgAACAGAQAAAAEAA=</HashCode>
+      <FileName>Forms\TransactionForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Migrations.Configuration">
+    <Position X="12" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Program">
+    <Position X="17.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Properties.Resources">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Properties.Settings">
+    <Position X="6.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Serialized.AlbumXmlSerialized">
+    <Position X="13.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialized\AlbumXmlSerialized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Serialized.GameXmlSerialized">
+    <Position X="10.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialized\GameXmlSerialized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Serialized.MovieXmlSerialized">
+    <Position X="12" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialized\MovieXmlSerialized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
