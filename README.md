@@ -7,8 +7,8 @@ Windows Form application that represents a store of games, movies and music albu
 Copy repository to your computer, then compile the project using Visual Studio.
 
 ## Built With
-* [EntityFramework] (https://docs.microsoft.com/en-us/ef/) - The database framework used.
-* [Windows Forms] (https://docs.microsoft.com/en-us/dotnet/framework/winforms/) - The graphical class library used.
+* [EntityFramework](https://docs.microsoft.com/en-us/ef/) - The database framework used.
+* [Windows Forms](https://docs.microsoft.com/en-us/dotnet/framework/winforms/) - The graphical class library used.
 
 ## Graph
 
